@@ -121,17 +121,6 @@ class cannons_c:
                 self.yc.append(yc)
                 self.zc.append(zc)
                 break
-    def show(self):
-        fig=plt.figure(1)
-        ax=fig.gca(projection='3d')
-        ax.plot(self.xc,self.yc,self.zc)
-        ax.set_zlim3d(0,10000)
-        plt.xlabel('x')
-        plt.ylabel('y')
-        plt.show()
-y=cannons_c()
-y.cal_c()
-y.show()
 ```
 ####step 2: Taking Coriolis into consideration but exclude the influence of wind :
 Consider the force in the following coordinates:
